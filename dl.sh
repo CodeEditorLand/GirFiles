@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 ./gir-dl.sh https://packages.debian.org/unstable/amd64/libatk1.0-dev/download http.us.debian.org
