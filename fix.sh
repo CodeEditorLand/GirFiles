@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -x -e
 
 # Remove Int32 alias because it misses c:type, it not like anyone actually cares about it.

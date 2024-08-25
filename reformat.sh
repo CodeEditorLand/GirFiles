@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -x -e
 
 # `///` used as `//` not works in Windows in this case
