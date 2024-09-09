@@ -148,7 +148,7 @@ xmlstarlet ed -L \
 	-u '//_:constant[@name="DOM_NODE_FILTER_SHOW_ALL"]/_:type[@name="gint"]/@name' -v "guint" \
 	WebKit2WebExtension-4.0.gir
 
-xmlstarlet tr JavaScriptCore-4.0.xsl JavaScriptCore-4.0.gir | xmlstarlet fo > JavaScriptCore-4.0.gir.tmp
+xmlstarlet tr JavaScriptCore-4.0.xsl JavaScriptCore-4.0.gir | xmlstarlet fo >JavaScriptCore-4.0.gir.tmp
 mv JavaScriptCore-4.0.gir.tmp JavaScriptCore-4.0.gir
 
 # fill in types from JavaScriptCore

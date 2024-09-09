@@ -6,12 +6,12 @@ echo $MIRRORS
 WGETPARAMS="--tries=10 --retry-on-http-error=500 --waitretry=1 --show-progress"
 EXTRA_MIRROR=security.ubuntu.com/ubuntu/pool
 if [ $# -lt 2 ]; then
-	MIRROR="mirrors.kernel.org"
+  MIRROR="mirrors.kernel.org"
 else
-	MIRROR="$2"
+  MIRROR="$2"
 fi
 wget $WGETPARAMS -O tmp.html "$MIRRORS"
-URL=$(cat tmp.html | grep -oP "http://($MIRROR|$EXTRA_MIRROR)/[^\"]+")
+URL=`cat tmp.html | grep -oP "http://($MIRROR|$EXTRA_MIRROR)/[^\"]+"`
 rm tmp.html
 echo $URL
 wget $WGETPARAMS -O tmp.deb "$URL"
